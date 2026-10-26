@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 import { fileURLToPath } from 'node:url';
 
 export default defineConfig({
-  base: '/weather-react/',
+  base: '/weather_app_react/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

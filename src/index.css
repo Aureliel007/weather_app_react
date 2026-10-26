@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-night-950: #070f24;
+  --color-night-900: #0b1c3f;
+  --color-night-700: #1e3a6e;
+  --color-sun-400: #f2a33c;
+  --color-mist-100: #edf1f7;
+  --color-mist-400: #a9b6cc;
+
+  --animate-rise: rise 400ms ease-out both;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+body {
+  @apply bg-night-950 font-sans text-mist-100 antialiased;
+}
