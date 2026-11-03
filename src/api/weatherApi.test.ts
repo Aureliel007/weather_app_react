@@ -15,6 +15,8 @@ describe('getWeatherByCity', () => {
     expect(data).toEqual({
       name: 'Москва',
       country: 'Россия',
+      latitude: 55.75,
+      longitude: 37.61,
       temperature: 15.4,
       weatherCode: 0,
       windSpeed: 12.2,

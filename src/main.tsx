@@ -1,13 +1,14 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import { RouterProvider } from 'react-router-dom';
 import './index.css';
-import { App } from './App';
+import { router } from './router';
 
 const root = document.getElementById('root');
 if (!root) throw new Error('Не найден элемент #root для монтирования приложения');
 
 createRoot(root).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>
 );

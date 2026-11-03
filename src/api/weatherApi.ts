@@ -71,6 +71,8 @@ export async function getWeatherByCity(
   return {
     name: location.name,
     country: location.country ?? '',
+    latitude: location.latitude,
+    longitude: location.longitude,
     temperature: current.temperature_2m,
     weatherCode: current.weather_code,
     windSpeed: current.wind_speed_10m,
