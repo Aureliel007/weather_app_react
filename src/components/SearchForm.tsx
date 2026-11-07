@@ -12,7 +12,9 @@ export function SearchForm({ onSearch, disabled = false }: SearchFormProps) {
   function handleSubmit(event: SyntheticEvent<HTMLFormElement>) {
     event.preventDefault();
     const city = value.trim();
-    if (city) onSearch(city);
+    if (!city) return;
+    setValue('');
+    onSearch(city);
   }
 
   return (
